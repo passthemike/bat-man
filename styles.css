@@ -44,7 +44,7 @@
 }
 
 .navigation a:last-child{
-      padding-right: 0;
+      padding-right: 4;
 }
 
 .navigation a li{
@@ -90,6 +90,13 @@ header img{
 header h3{
   font-size: 30px;
   color: #ffff00;
+}
+
+header h2{
+      font-size: 30px;
+      text-align: left;
+      color: #ffff00;
+
 }
 
 header img{
