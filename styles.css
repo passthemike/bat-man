@@ -70,25 +70,17 @@ html, body{
     background-color: #deddd8;
 }
 
+.container {
+  max-width: 900px;
+  margin-left:
+  margin-right: auto;
+}
+
 /*This is where the 3 Batman img's start*/
 .center {
-  width: 340px;
-  height: 100%;
-  border-radius: 100%;
+  width: 400px;
+  border-radius: 35%;
   padding-bottom: 20px;
-}
-
-.left {
-  width: 340px;
-  height: 100%;
-  border-radius: 100%;
-  padding-bottom: 20px;
-}
-
-.right {
-  width: 340px;
-  height: 100%;
-  border-radius: 100%;
 }
 
 .about-batman{
