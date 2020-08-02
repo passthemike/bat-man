@@ -71,25 +71,28 @@ html, body{
 }
 
 .container {
-  max-width: 900px;
-  margin-left:
+  max-width: 940px;
+  margin-left: auto;
   margin-right: auto;
 }
 
-/*This is where the 3 Batman img's start*/
-.center {
-  width: 400px;
-  border-radius: 35%;
-  padding-bottom: 20px;
-}
 
-.about-batman{
-    max-width: 900px;
-    margin-bottom: 20px;
+/*This is where the 3 Batman img's start*/
+
+.about-batman {
+    max-width: 66%
     padding: 20px 20px;
-    text-align: center;
     color: #2e2e1f;
     font-size: 18px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.about-batman img {
+  width: 470px;
+  border-radius: 35%;
+  padding-bottom: 20px;
+  float: left;
 }
 
 .about-batman h2{
@@ -98,6 +101,14 @@ html, body{
       color: black;
 }
 
+.about-batman p {
+  width: 34%
+  float: both;
+  font-size: 20px;
+}
+
+/*This starts Parents*/
+
 .parents h3{
   font-size: 20px;
   color: black;
@@ -105,13 +116,12 @@ html, body{
 }
 
 .parents img {
-  position: relative;
   margin: 15px;
   border: solid black 1px;
   border-radius: 116px;
   height: 478px;
-  width: 420px;
-  shape-outside: circle();
+  width: 415px;
+  clear: both;
 }
 
 .parents p {
@@ -119,6 +129,8 @@ html, body{
     position: relative;
     display: flex;
 }
+
+/*This is the start of Batmans Friends*/
 
 .batmans-friends h3 {
   font-size: 25px;
