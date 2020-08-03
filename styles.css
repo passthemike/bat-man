@@ -3,6 +3,7 @@
     height: 75px;
     display: block;
     background-color: #deddd8;
+    margin-bottom: 20px;
 }
 
 .inner_header{
@@ -37,121 +38,233 @@
   width: 50%;
 }
 
-.navigation{
+/*Site Navigation */
+.site-nav {
       float: right;
       height: 100%;
 }
 
-.navigation a{
+.site-nav a{
       height: 100%;
-      display: table;
+      display: block;
       float: left;
       padding: 15px 20px;
+      border: 2px solid #6b6b47;
 }
 
-.navigation a:last-child{
+.site-nav a:last-child{
       padding-right: 4;
 }
 
-.navigation a li{
+.site-nav a li{
       display: table-cell;
       vertical-align: middle;
       height: 100%;
-      color: white;
+      color: black;
       font-family: "Arial, sans-serif";
       font-size: 16px;
+      margin-right: 5px;
 }
+
+.site-nav a:hover {
+  background-color: #6b6b47;
+}
+/*End Site Navigation */
 
 /*This is where the body of the site starts.*/
 
 html, body{
-    font-family: Arial, sans-serif;
+    font-family: Tahoma, sans-serif;
     margin: 0;
     background-color: #deddd8;
 }
 
 .container {
-  max-width: 940px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-/*This is where the 3 Batman img's start*/
-
 .about-batman {
     max-width: 66%
-    padding: 20px 20px;
-    color: #2e2e1f;
-    font-size: 18px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    padding: 5px 10px;
+    border: 2px solid #6b6b47;
+    background-color: white;
+    box-sizing: border-box;
 }
 
 .about-batman img {
-  width: 470px;
+  width: 445px;
   border-radius: 35%;
+  padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
   float: left;
+  box-sizing: border-box;
 }
 
 .about-batman h2{
       font-size: 25px;
       text-align: center;
       color: black;
+      padding-top: 15px;
 }
 
 .about-batman p {
   width: 34%
-  float: both;
-  font-size: 20px;
+  text-align:right;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 
-/*This starts Parents*/
-
-.parents h3{
-  font-size: 20px;
-  color: black;
-  padding-left: 120px;
-}
-
-.parents img {
-  margin: 15px;
-  border: solid black 1px;
-  border-radius: 116px;
-  height: 478px;
-  width: 415px;
+.fix-1 {
   clear: both;
 }
 
+.group:before,
+.group:after {
+    content:"";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+/*This starts Parents*/
+.container-2 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parents {
+  max-width: 66%
+  padding: 5px 10px;
+  border: 2px solid #6b6b47;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.parents img {
+  width: 400px;
+  border-radius: 35%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.parents h3{
+  font-size: 23px;
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+}
+
 .parents p {
-    font-size: 18px;
-    position: relative;
-    display: flex;
+  width: 34%
+  float:left;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fix-2 {
+  clear: both;
+}
+
+.group:before,
+.group:after {
+    content:"";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+  zoom: 1;
 }
 
 /*This is the start of Batmans Friends*/
 
+.container-3 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.batmans-friends {
+  max-width: 66%
+  padding: 5px 10px;
+  border: 2px solid #6b6b47;
+  background-color: white;
+  box-sizing: border-box;
+}
+
 .batmans-friends h3 {
-  font-size: 25px;
-  text-align: left;
-  padding-left: 125px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .batmans-friends img {
-  margin-right: 10px;
-  margin-bottom: 5px;
-  border: solid black 1px;
-  border-radius: 116px;
-  height: 478px;
-  width: 420px;
+  width: 370px;
+  border-radius: 55%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  float: right;
+  box-sizing: border-box;
 }
 
 .batmans-friends p {
+  width: 34%
+  float:right;
   font-size: 18px;
-  text-align: right;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .pictures img {
   border-radius: 60px;
+}
+
+.fix-3 {
+  clear: both;
+}
+
+.group:before,
+.group:after {
+    content:"";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+
+.footer {
+  text-align: center;
+  font-size: 85%;
+  color: #999;
+  padding-bottom: 20px;
 }
