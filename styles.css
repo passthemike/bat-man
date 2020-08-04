@@ -73,6 +73,12 @@ html, body{
     margin: 0;
     background-color: #deddd8;
 }
+/*This img tag is used for ALL img to have the following values */
+.img {
+  max-width: 100%
+  height: auto;
+  display: block;
+}
 
 .container {
   max-width: 960px;
@@ -97,6 +103,17 @@ html, body{
   padding-right: 20px;
   float: left;
   box-sizing: border-box;
+  position: relative;
+}
+
+.about-batman span {
+  position: absolute;
+  top: 325px;
+  left: 385px;
+  color: yellow;
+  font-size: 20px;
+  font-weight: bolder;
+  opacity: .1;
 }
 
 .about-batman h2{
