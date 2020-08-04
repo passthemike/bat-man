@@ -134,8 +134,9 @@ html, body{
 }
 
 .bat-dad img {
-  border-radius: 35%;
-  padding-top: 20px;
+  border-radius: 50%;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 /*This starts Parents*/
 .container-2 {
@@ -196,6 +197,12 @@ html, body{
   zoom: 1;
 }
 
+.bat-pool img {
+  border-radius: 50%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 /*This is the start of Batmans Friends*/
 
 .container-3 {
@@ -221,12 +228,12 @@ html, body{
 
 .batmans-friends img {
   width: 370px;
-  border-radius: 55%;
+  border-radius: 35%;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 20px;
-  float: right;
+  float: left;
   box-sizing: border-box;
 }
 
@@ -260,6 +267,11 @@ html, body{
   zoom: 1;
 }
 
+.bat-grass img {
+  border-radius: 50%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 .footer {
   text-align: center;
