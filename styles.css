@@ -31,13 +31,6 @@
       position: relative;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 /*Site Navigation */
 .site-nav {
       float: right;
@@ -49,7 +42,9 @@
       display: block;
       float: left;
       padding: 15px 20px;
-      border: 2px solid #6b6b47;
+      border: 1px solid black;
+      text-decoration: none;
+      margin-right: 5px;
 }
 
 .site-nav a:last-child{
@@ -63,11 +58,11 @@
       color: black;
       font-family: "Arial, sans-serif";
       font-size: 16px;
-      margin-right: 5px;
+      margin-right: 10px;
 }
 
 .site-nav a:hover {
-  background-color: #6b6b47;
+  background-color: white;
 }
 /*End Site Navigation */
 
@@ -138,6 +133,10 @@ html, body{
   zoom: 1;
 }
 
+.bat-dad img {
+  border-radius: 35%;
+  padding-top: 20px;
+}
 /*This starts Parents*/
 .container-2 {
   max-width: 960px;
