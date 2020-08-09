@@ -25,12 +25,12 @@
 
 .logo_container h1{
       color: white;
-      height: 25px;
+      height: 20px;
       display: table-cell;
       font-family: "Andes";
       font-size: 55px;
       font-weight: bolder;
-      padding: 15px 50px;
+      padding: 10px 30px 10px 10px;
       font-weight: 800;
       position: relative;
 }
@@ -49,13 +49,14 @@
       height: 100%;
       display: block;
       float: left;
-      padding: 10px 5px;
+      padding: 10px;
       border: 2px double #737373;
-      border-radius: 5%;
-      margin-right: 20px;
-      background-color: #bfbfbf;
+      border-radius: 8%;
+      margin: 5px 5px 10px 20px;
+      background-color: #cccccc;
       text-decoration: none;
       font-weight: bolder;
+      color: black;
 }
 
 .site-nav a:last-child{
@@ -88,7 +89,6 @@ html, body{
 .img {
   max-width: 100%
   height: auto;
-  display: block;
 }
 
 .container {
@@ -104,21 +104,22 @@ html, body{
     border-radius: 20px;
     background-color: white;
     box-sizing: border-box;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13)
 }
 
 .about-batman img {
-  width: 445px;
-  border-radius: 35%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 20px;
-  float: left;
-  box-sizing: border-box;
-  position: relative;
+    width: 445px;
+    border-radius: 35%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.about-batman h2{
+#about-batman h2{
       font-size: 25px;
       text-align: center;
       color: black;
@@ -152,16 +153,18 @@ html, body{
   zoom: 1;
 }
 
-.bat-dad img {
+.bat-logo img {
   border-radius: 50%;
   padding-top: 40px;
   padding-bottom: 40px;
+  height: 400px;
+  width: 672px;
 }
 /*This starts Parents*/
 .container-2 {
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .parents {
@@ -184,7 +187,7 @@ html, body{
   box-sizing: border-box;
 }
 
-.parents h3{
+#parents h3{
   font-size: 23px;
   color: black;
   text-align: center;
@@ -217,18 +220,44 @@ html, body{
   zoom: 1;
 }
 
-.bat-pool img {
-  border-radius: 50%;
+/* 1 image= bat-dad */
+.container-4 {
+  max-width: 960px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.container-4 img {
+  border-radius: 25%;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 15px;
+  max-width: 50%;
+}
+
+.fix-4 {
+  clear: both;
+}
+
+.group:before,
+.group:after {
+    content:"";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+  zoom: 1;
 }
 
 /*This is the start of Batmans Friends*/
 
 .container-3 {
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .batmans-friends {
@@ -238,9 +267,10 @@ html, body{
   background-color: white;
   border-radius: 20px;
   box-sizing: border-box;
+  margin: 40px;
 }
 
-.batmans-friends h3 {
+#batmans-friends h3 {
   font-size: 20px;
   color: black;
   text-align: center;
@@ -293,6 +323,86 @@ html, body{
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+/* Learn More Content */
+.content {
+  margin: 10px;
+}
+
+/*Form Styles*/
+form {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.hidden-label {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+input,
+select {
+  font-family: Tahoma, sans-serif;
+  font-size: 100%;
+}
+
+input[type="email"],
+[type="password"],
+[type="text"],
+[type="number"],
+[type="tel"],
+select {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 40px;
+  font-family: Tahoma, sans-serif;
+  font-size: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  border: 1px solid #b3b3b3;
+  outline: none;
+}
+
+input[type="email"]:focus,
+[type="password"]:focus,
+[type="text"]:focus,
+[type="number"]:focus,
+[type="tel"]:focus {
+  border: 1px solid #b3b3b3;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13);
+}
+
+input[type="submit"] {
+  display: block;
+  box-sizing: border-box;
+  background-color: #b3b3b3;
+  color: white;
+  padding: 10px 0;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 115px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px solid #b3b3b3;
+    background-color: #4d4d4d;
+}
+
+.checkbox-text {
+  font-size: 85%;
+  color: #d9d9d9;
+}
+/* End of Form */
 
 .footer {
   text-align: center;
