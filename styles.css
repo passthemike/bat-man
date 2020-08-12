@@ -2,100 +2,86 @@
   box-sizing: border-box;
 }
 
-.header{
-    width: 100%;
-    height: 85px;
-    display: block;
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+header{
+    padding-top: 20px;
     background-color: black;
-    margin-bottom: 20px;
+    color: white;
 }
 
-.inner_header{
-      width: 90%;
-      height: 100%;
-      display: block;
-      margin: 0 auto;
-}
-
-.logo_container{
-      height: 100%;
-      display: table;
-      float: right;
-}
-
-.logo_container h1{
+header h1{
       color: white;
       height: 20px;
-      display: table-cell;
-      font-family: "Andes";
+      display: block;
+      font-family: "Andes, sans-serif";
       font-size: 55px;
-      font-weight: bolder;
-      padding: 10px 30px 10px 10px;
-      letter-spacing: 6px;
+      letter-spacing: 4px;
+      text-shadow: 2px 10px 3px #999999;
       font-weight: 800;
       position: relative;
+      vertical-align: middle;
 }
 
 /*Site Navigation */
-.site-nav {
-      float: right;
-      height: 100%;
-      top:0;
-      width: 100%;
-      position: absolute;
-      overflow: hidden;
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin-right: : 5px;
 }
 
 .site-nav a{
-      height: 100%;
+      height: 80px;
+      width: 80px;
       display: block;
-      float: left;
-      padding: 10px;
-      border: 2px double #737373;
-      border-radius: 8%;
-      margin: 5px 5px 10px 20px;
-      background-color: #cccccc;
+      background-color: black;
       text-decoration: none;
-      font-weight: bolder;
-      color: black;
-}
-
-.site-nav a:last-child{
-      padding-right: 6;
-}
-
-.site-nav a li{
-      display: table-cell;
-      vertical-align: middle;
-      height: 100%;
-      color: #333333;
+      color: white;
       font-family: "Andes, sans-serif";
-      font-size: 16px;
-      margin-left: 5px;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-bottom: none;
 }
 
-.site-nav a:hover {
-  background-color: white;
-}
+
+.site-nav-about-batman a {background-position: 0;}
+
+.site-nav-parents a {background-position: 0;}
+
+.site-nav-friends a {background-position: 0;}
+
+.site-nav-contact a {background-position: 0;}
+
+.site-nav a:hover {background-color: white;}
 /*End Site Navigation */
 
 /*This is where the body of the site starts.*/
 
-html, body{
+html {
+  background-color: #deddd8;
+  line-height: 1.5;
+}
+
+body {
     font-family: Tahoma, sans-serif;
     margin: 0;
-    background-color: #deddd8;
-}
-/*This img tag is used for ALL img to have the following values */
-.img {
-  max-width: 100%
-  height: auto;
+    padding: 0;
+    font-size: 15px;
 }
 
 .container {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 940px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .about-batman {
@@ -160,13 +146,9 @@ html, body{
   padding-bottom: 40px;
   height: 400px;
   width: 672px;
+  position: relative;
 }
 /*This starts Parents*/
-.container-2 {
-  max-width: 960px;
-  margin: auto;
-  box-sizing: border-box;
-}
 
 .parents {
   max-width: 66%
@@ -222,13 +204,8 @@ html, body{
 }
 
 /* 1 image= bat-dad */
-.container-4 {
-  max-width: 960px;
-  margin: auto;
-  box-sizing: border-box;
-}
 
-.container-4 img {
+.bat-dad img {
   border-radius: 25%;
   padding-top: 40px;
   padding-bottom: 15px;
@@ -254,12 +231,6 @@ html, body{
 }
 
 /*This is the start of Batmans Friends*/
-
-.container-3 {
-  max-width: 960px;
-  margin: auto;
-  box-sizing: border-box;
-}
 
 .batmans-friends {
   max-width: 66%
@@ -291,7 +262,7 @@ html, body{
 
 .batmans-friends p {
   width: 34%
-  float:right;
+  float: right;
   font-size: 18px;
   padding-left: 15px;
   padding-right: 15px;
