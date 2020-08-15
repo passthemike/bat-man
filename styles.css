@@ -2,143 +2,204 @@
   box-sizing: border-box;
 }
 
-
-header{
-    padding-top: 20px;
-    background-color: black;
-    color: white;
-}
-
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-}
-
-header h1{
-      color: white;
-      height: 20px;
-      display: block;
-      font-family: "Andes, sans-serif";
-      font-size: 55px;
-      letter-spacing: 4px;
-      text-shadow: 2px 10px 3px #999999;
-      font-weight: 800;
-      position: relative;
-}
-
-/*Site Navigation */
-.site-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-.site-nav li {
-  float: left;
-  list-style: none;
-  margin-right: : 5px;
-}
-
-.site-nav a{
-      height: 80px;
-      width: 80px;
-      display: block;
-      background-color: inherit;
-      text-decoration: none;
-      color: white;
-      font-family: "Andes, sans-serif";
-      font-size: 14px;
-      padding: 10px 20px;
-      border-bottom: none;
-}
-
-
-.site-nav-about-batman a {background-position: 0;}
-
-.site-nav-parents a {background-position: 0;}
-
-.site-nav-friends a {background-position: 0;}
-
-.site-nav-contact a {background-position: 0;}
-
-.site-nav a:hover {background-color: white;}
-/*End Site Navigation */
-
-/*This is where the body of the site starts.*/
-
 html {
   background-color: #deddd8;
   line-height: 1.5;
 }
 
 body {
-    font-family: Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: 15px;
 }
+
+header {
+  background-color: black;
+  display: block;
+  border: 2px solid #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  width: 300px;
+  height: 80px;
+  color: #FFF;
+  font-family: "Andes, sans-serif";
+  font-size: 60px;
+  letter-spacing: 4px;
+  text-shadow: 2px 10px 3px #999999;
+  font-weight: normal;
+  position: relative;
+  background-color: grey;
+  box-sizing: border-box;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+header p {
+  color: #FFF;
+  font-family: "Franklin Gothic Demi";
+  font-size: 25px;
+  opacity: .8;
+  padding-left: 50px;
+  background-color: green;
+  width: 280px;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+/*Site Navigation */
+.site-nav {
+  margin-top: 20px;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.site-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.site-nav a {
+  display: block;
+  text-decoration: none;
+  color: grey;
+  font-family: "Andes, sans-serif";
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid orange;
+  border-bottom: none;
+  border-radius: 8%;
+  box-sizing: border-box;
+}
+
+.site-nav a:hover {background-color: grey;}
+
+/* For tablet and phone sizing */
+@media screen and (max-width: 700px) {
+
+  .site-nav li {
+    width: 33.332%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .site-nav a {
+    padding: 15px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.group:before,
+.group:after {
+  content:"";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+@media screen and (max-width: 480px) {
+
+  .site-nav li {
+    max-width: 50%;
+  }
+}
+/* /For tablet and phone sizing */
+
+/*End Site Navigation */
+
+/*This is where the body of the site starts.*/
 
 .container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+/* for phone screens */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-top: 20px;
+  }
+}
+/* for phone screens */
 
 .about-batman {
-    max-width: 66%
-    padding: 5px 10px;
-    border: 2px solid #737373;
-    border-radius: 20px;
-    background-color: white;
-    box-sizing: border-box;
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13)
+  padding: 40px;
+  border: 2px solid #737373;
+  border-radius: 20px;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13)
 }
 
 .about-batman img {
-    width: 445px;
-    border-radius: 35%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 20px;
-    float: left;
-    box-sizing: border-box;
-    position: relative;
+  width: 50%;
+  border-radius: 35%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
 }
 
 #about-batman h2{
-      font-size: 25px;
-      text-align: center;
-      color: black;
-      padding-top: 15px;
+  font-size: 25px;
+  text-align: center;
+  color: black;
 }
 
 .about-batman p {
-  width: 34%
-  text-align:right;
+  width: 50%;
+  float: left;
   font-size: 18px;
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 700px) {
+  .about-batman,
+  .about-batman p {
+    width: auto;
+    float: none;
+  }
+
+}
+/* Clearfix Method */
 .fix-1 {
   clear: both;
 }
 
 .group:before,
 .group:after {
-    content:"";
-    display: table;
+  content:"";
+  display: table;
 }
 
 .group:after {
-    clear: both;
+  clear: both;
 }
 
 .group {
   zoom: 1;
 }
+/* /Clearfix Method */
 
 .bat-logo img {
   border-radius: 50%;
@@ -185,18 +246,14 @@ body {
   padding-right: 15px;
 }
 
-.fix-2 {
-  clear: both;
-}
-
 .group:before,
 .group:after {
-    content:"";
-    display: table;
+  content:"";
+  display: table;
 }
 
 .group:after {
-    clear: both;
+  clear: both;
 }
 
 .group {
@@ -218,12 +275,12 @@ body {
 
 .group:before,
 .group:after {
-    content:"";
-    display: table;
+  content:"";
+  display: table;
 }
 
 .group:after {
-    clear: both;
+  clear: both;
 }
 
 .group {
@@ -278,12 +335,12 @@ body {
 
 .group:before,
 .group:after {
-    content:"";
-    display: table;
+  content:"";
+  display: table;
 }
 
 .group:after {
-    clear: both;
+  clear: both;
 }
 
 .group {
@@ -366,8 +423,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-    border: 1px solid #b3b3b3;
-    background-color: #4d4d4d;
+  border: 1px solid #b3b3b3;
+  background-color: #4d4d4d;
 }
 
 .checkbox-text {
